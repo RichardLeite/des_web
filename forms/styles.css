@@ -61,6 +61,10 @@ body {
     color: inherit;
 }
 
+.data-input > input:focus-visible {
+    outline: none;
+}
+
 .left > .data-input {
     grid-template-areas:
     "titulo titulo"
