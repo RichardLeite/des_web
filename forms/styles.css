@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(154,196,234);
+    background: linear-gradient(90deg, rgba(154,196,234,1) 0%, rgba(149,182,229,1) 35%, rgba(151,154,222,1) 100%);
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    align-self: center;
+    margin: 5%;
+    height: 65%;
+}
+
+.content > .left, .content > .rigth {
+    height: 100%;
+    padding: 5%;
+    width: 50%;
+}
+
+.content > .left {
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+}
+
+.left > h2 {
+    color: #97b6db;
+}
+
+.content > .rigth {
+    background: #4638cb;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.left > .data-input, .rigth > .data-input {
+    display: grid;
+    row-gap: 10%;
+    height: 80%;
+    width: 100%;
+}
+
+.left {
+    color: rgb(133, 128, 128);
+}
+.rigth {
+    color: #fff;
+}
+.data-input > input, .data-input > select, .data-input > input::placeholder {
+    border: none;
+    margin-top: 5%;
+    height: 70%;
+    background: inherit;
+    color: inherit;
+}
+
+.left > .data-input {
+    grid-template-areas:
+    "titulo titulo"
+    "primeiroNome segundoNome"
+    "cargo cargo"
+    "empresa empresa"
+    "atuacao numeroFuncionario";
+    column-gap: 5%;
+}
+
+.left > .data-input > input, .left > .data-input > select {
+    border-bottom: 1px solid rgb(133, 128, 128);
+}
+
+.rigth > .data-input > input, .rigth > .data-input > select {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.rigth > .data-input > select option {
+    color: rgb(133, 128, 128);
+}
+
+.data-input > .titulo {
+    grid-area: titulo;
+    
+}
+
+.data-input > .primeiroNome {
+    grid-area: primeiroNome;
+}
+
+.data-input > .segundoNome {
+    grid-area: segundoNome;
+}
+
+.data-input > .cargo {
+    grid-area: cargo;
+}
+
+.data-input > .empresa {
+    grid-area: empresa;
+}
+
+.data-input > .atuacao {
+    grid-area: atuacao;
+}
+
+.data-input > .numeroFuncionario {
+    grid-area: numeroFuncionario;
+}
+
+.rigth > .data-input {
+    grid-template-areas: 
+    "rua rua"
+    "informacoesAdicionais informacoesAdicionais"
+    "codigoPostal estados"
+    "paises paises"
+    "ddiPais numeroTelefone"
+    "email email";
+    column-gap: 5%;
+}
+
+.data-input > .rua {
+    grid-area: rua;
+}
+
+.data-input > .informacoesAdicionais {
+    grid-area: informacoesAdicionais;
+}
+
+.data-input > .codigoPostal {
+    grid-area: codigoPostal;
+}
+
+.data-input > .estados {
+    grid-area: estados;
+}
+
+.data-input > .paises {
+    grid-area: paises;
+}
+
+.data-input > .ddiPais {
+    grid-area: ddiPais;
+}
+
+.data-input > .numeroTelefone {
+    grid-area: numeroTelefone;
+}
+
+.data-input > .email {
+    grid-area: email;
+}
+
+.rigth > .aceite {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.segundaLinha > * {
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    background: #fff;
+    padding: 3%;
+    font-weight: 600;
+    margin-top: 2%;
+    justify-content: space-around;
+}
