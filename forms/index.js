@@ -12,17 +12,13 @@ function resetInputs() {
 };
 
 function  findCEP(cep) {
-    console.log('heguei aqui com', cep.target.value)
     const url = `http://viacep.com.br/ws/${cep.target.value}/json/`;
     if (isValidBRZip(cep.target.value)) {
         fetch(url).then((response) => response.json())
         .then(data => {
-            console.log(data);
             findState(data.uf);
         })
-        .catch(error => {
-            console.error(error);
-        });
+        .catch(error => console.error(error));
     }
 }
 
@@ -45,9 +41,7 @@ async function fillStates() {
             elementoEstados.appendChild(option);
         });
     })
-    .catch(error => {
-        console.error(error);
-    });
+    .catch(error => console.error(error));
 }
 
 async function fillCountry() {
@@ -74,10 +68,7 @@ function fillDDI() {
     const jsonData = JSON.parse(request.responseText);
 
     const elementoDDI = document.querySelector('.ddiPais');
-    console.log(Object.values(jsonData));
-
     const array = Object.entries(jsonData);
-    console.log(array);
 
     array.forEach(item => {
         let option = document.createElement('option');
@@ -90,7 +81,6 @@ function fillDDI() {
 function findState(uf) {
     arrayEstados.forEach(estado => {
         if (estado.sigla === uf) {
-            console.log(estado.sigla);
             document.querySelector('.estados').value = estado.nome;
         }
     })
