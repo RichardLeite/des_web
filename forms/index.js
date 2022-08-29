@@ -2,6 +2,7 @@ let arrayEstados = [];
 let arrayPaises = [];
 fillStates();
 fillCountry();
+fillDDI();
 function resetInputs() {
     const inputs = document.querySelectorAll('input');
     inputs.forEach(input => {
@@ -66,6 +67,26 @@ async function fillCountry() {
     .catch(error => console.error(error));
 }
 
+function fillDDI() {
+    const request = new XMLHttpRequest();
+    request.open("GET","./ddi.json", false);
+    request.send(null);
+    const jsonData = JSON.parse(request.responseText);
+
+    const elementoDDI = document.querySelector('.ddiPais');
+    console.log(Object.values(jsonData));
+
+    const array = Object.entries(jsonData);
+    console.log(array);
+
+    array.forEach(item => {
+        let option = document.createElement('option');
+        option.value = `(+${item[1].ddi}) ${item[1].pais}`;
+        option.innerHTML = `(+${item[1].ddi}) ${item[1].pais}`;
+        elementoDDI.appendChild(option);
+    });
+}
+
 function findState(uf) {
     arrayEstados.forEach(estado => {
         if (estado.sigla === uf) {
@@ -73,4 +94,14 @@ function findState(uf) {
             document.querySelector('.estados').value = estado.nome;
         }
     })
+}
+
+function isNameValid(event) {
+    const nome = event.target.value;
+     
+}
+
+function isNameValid(event) {
+    const nome = event.target.value;
+     
 }
