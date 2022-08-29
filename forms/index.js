@@ -98,10 +98,11 @@ function findState(uf) {
 
 function isNameValid(event) {
     const nome = event.target.value;
-     
-}
+    const pattern = `\`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`
 
-function isNameValid(event) {
-    const nome = event.target.value;
-     
+    const result = pattern.split('').some(specialChar => {
+        return nome.includes(specialChar)
+    });
+
+    return result;
 }
