@@ -1,0 +1,25 @@
+* {
+  background: blanchedalmond; }
+
+.container__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5%; }
+  .container__content__card {
+    padding: 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container__content__card h3 {
+      text-align: center; }
+    .container__content__card img {
+      border-radius: 20px;
+      transition: all ease-in-out 1s; }
+    .container__content__card img:hover {
+      width: 80%; }
+    .container__content__card__mais {
+      color: blue; }
+    .container__content__card__mais:hover {
+      text-decoration: underline; }

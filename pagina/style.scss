@@ -1,0 +1,43 @@
+* {
+    background:  blanchedalmond;
+    
+}
+
+.container {
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 5%;
+
+        &__card {
+            padding: 5%;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h3 {
+                text-align: center;
+            }
+
+            img {
+                border-radius: 20px;
+                transition: all ease-in-out 1s;
+            }
+
+            img:hover {
+                width: 80%;
+            }
+
+            &__mais {
+                color: blue;
+            }
+
+            &__mais:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
