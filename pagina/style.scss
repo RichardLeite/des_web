@@ -1,9 +1,25 @@
 * {
-    background:  blanchedalmond;
-    
+    background:  #1D1E22;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    transition: all ease-in-out 0.5s;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__buscar {
+        border: none;
+        border-radius: 50px;
+        align-self: flex-end;
+        background: #18191C;
+        width: 20%;
+        height: auto;
+        margin: 2%;
+        padding: 2%;
+    }
 
     &__content {
         display: grid;
@@ -24,11 +40,24 @@
 
             img {
                 border-radius: 20px;
-                transition: all ease-in-out 1s;
+                transition: all ease-in-out 0.5s;
+                width: 15rem;
+                height: auto;
             }
 
             img:hover {
+                width: 15.5rem;
+            }
+
+            p {
+                overflow-y: hidden;
                 width: 80%;
+                transition: all ease-in-out 0.5s;
+            }
+
+            p:hover {
+                // overflow-y: scroll;
+                width: 90%;
             }
 
             &__mais {
@@ -39,5 +68,18 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    &__button {
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        background: #FF0000;
+        opacity: 75%;
+        width: 30%;
+        padding: 1%;
+        font-size: 1.2rem;
+        height: auto;
+        cursor: pointer;
     }
 }
