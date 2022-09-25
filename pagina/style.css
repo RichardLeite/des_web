@@ -42,7 +42,6 @@
         width: 80%;
         transition: all ease-in-out 0.5s; }
       .container__content__card p:hover {
-        overflow-y: scroll;
         width: 90%; }
       .container__content__card__mais {
         color: blue; }

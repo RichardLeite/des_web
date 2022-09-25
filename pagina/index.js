@@ -61,7 +61,6 @@ function buscarAnimes(indexPaginaBusca, numeroItensPagina) {
         .then(response => {
             response.data.forEach(element => {
               listaAnime.push(element);
-              // gerarCard(element);
             });
         })
         .catch(err => console.error(err));
