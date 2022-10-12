@@ -1,0 +1,44 @@
+<div class="content" >
+  <h2 class="content__title">
+    LucasFlix
+  </h2>
+  <form
+    action=""
+    method="post"
+    class="content__input"
+    [formGroup]="forms"
+    (ngSubmit)="efetuarLogin()"
+  >
+    <input
+      type="email"
+      name=""
+      formControlName="email"
+      class="content__input__email"
+      placeholder="E-mail"
+    >
+    <input
+      type="password"
+      name=""
+      formControlName="senha"
+      class="content__input__senha"
+      placeholder="Senha"
+    >
+  </form>
+
+  <div class="content__iteracoes">
+    <a
+      class="content__iteracoes__link"
+      (click)="recuperarSenha()"
+    >
+      Esqueceu senha ?
+    </a>
+
+    <app-button
+      class="content__iteracoes__button"
+      [isBackgroundRed]="true"
+      (click)="efetuarLogin()"
+      aria-label="Entrar"
+    >
+    </app-button>
+  </div>
+</div>
