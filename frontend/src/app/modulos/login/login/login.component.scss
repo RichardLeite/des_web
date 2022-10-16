@@ -2,7 +2,8 @@
   text-align: center;
   width: inherit;
   height: inherit;
-  margin: 40% 0;
+  margin: 70% 0;
+  position: relative;
 
   &__input {
     display: flex;
@@ -47,7 +48,7 @@
       align-self: flex-end;
     }
 
-    &__button {
+    &__entrar {
       width: 100%;
       margin-top: 5%;
     }
@@ -61,17 +62,14 @@
     width: 65%;
     margin: 25% auto;
     padding: 10%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .content:hover {
-    border: solid 1px var(--vermelho-opaco);
+    //animation: spin 1s linear infinite;
   }
 }
 
 @media screen and (min-width: 1024px){
   .content {
-    width: 70%;
+    width: 40%;
     margin: 10% auto;
+    padding: 5%;
   }
 }

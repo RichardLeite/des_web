@@ -1,4 +1,4 @@
-<div class="content" >
+<div class="content">
   <h2 class="content__title">
     LucasFlix
   </h2>
@@ -34,10 +34,17 @@
     </a>
 
     <app-button
-      class="content__iteracoes__button"
+      class="content__iteracoes__entrar"
       [isBackgroundRed]="true"
       (click)="efetuarLogin()"
       aria-label="Entrar"
+    >
+    </app-button>
+    <app-button
+      class="content__iteracoes__entrar"
+      [isBackgroundRed]="false"
+      aria-label="Cadastrar"
+      [textoInterno]="'Cadastrar'"
     >
     </app-button>
   </div>
