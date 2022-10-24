@@ -8,9 +8,9 @@ import { LoginModule } from './modulos/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+    declarations: [
+        AppComponent
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -18,8 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
         LoginModule,
         HttpClientModule
     ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    providers: [],
+    bootstrap: [AppComponent],
+  exports: [
+  ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

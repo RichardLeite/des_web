@@ -1,1 +1,38 @@
-Aqui
+<div class="content">
+  <app-header></app-header>
+  <app-search></app-search>
+
+  <div class="content__filters">
+    <app-filter
+      (click)="movieFocus()"
+      [textoInterno]="'Movie'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+
+    </app-filter>
+    <app-filter
+      (click)="tvShowFocus()"
+      [textoInterno]="'TV Show'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+    </app-filter>
+    <app-filter
+      (click)="serieFocus()"
+      [textoInterno]="'Series'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+    </app-filter>
+  </div>
+
+  <app-card-conteudo
+
+  ></app-card-conteudo>
+
+  <app-footer></app-footer>
+</div>

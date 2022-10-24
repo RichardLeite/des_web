@@ -1,0 +1,13 @@
+.content {
+  width: 100%;
+  max-width: 20vw;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 1rem;
+  animation: 1s all ease-in-out;
+}
+
+.active {
+  background: var(--vermelho-opaco);
+}
