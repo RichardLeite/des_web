@@ -16,6 +16,14 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./modulos/login/login.module').then(module => module.LoginModule)
+  },
+  {
+    path: 'cadastrar',
+    loadChildren: () => import('./modulos/cadastrar/cadastrar.module').then(module => module.CadastrarModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./modulos/profile/profile.module').then(module => module.ProfileModule)
   }
 ];
 

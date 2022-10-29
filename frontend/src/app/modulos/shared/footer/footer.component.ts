@@ -34,10 +34,11 @@ export class FooterComponent implements OnInit {
   }
 
   irPlay() {
-
+    console.log('Cheguei')
+    this.router.navigate(['cadastrar/conteudo']);
   }
 
   irProfile() {
-
+    this.router.navigateByUrl('profile');
   }
 }

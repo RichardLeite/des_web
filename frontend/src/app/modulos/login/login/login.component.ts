@@ -24,7 +24,8 @@ export class LoginComponent implements OnInit {
   }
 
   efetuarLogin(): void {
-
+    this.loginService.validarCliente(this.forms.value);
+    this.router.navigateByUrl('home')
   }
 
   recuperarSenha(): void {
@@ -32,6 +33,6 @@ export class LoginComponent implements OnInit {
   }
 
   cadastrar(): void {
-
+    this.router.navigate(['cadastrar/cliente']);
   }
 }

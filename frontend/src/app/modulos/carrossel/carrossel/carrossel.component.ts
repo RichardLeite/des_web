@@ -9,13 +9,13 @@ import { Conteudo } from '../../../models/conteudo';
 export class CarrosselComponent implements OnInit {
 
   @Input()
-  listaConteudo: Conteudo[];
+  listaConteudo: Conteudo[] = [];
 
   @Input()
-  categoria: string;
+  categoria: string = '';
 
   @Input()
-  itemBuscado: string;
+  itemBuscado: string = '';
 
   constructor() { }
 

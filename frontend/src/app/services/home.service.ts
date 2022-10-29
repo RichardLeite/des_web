@@ -32,4 +32,8 @@ export class HomeService {
   buscarTVShow() {
 
   }
+
+  adicionarConteudo(conteudo: Conteudo): void {
+
+  }
 }

@@ -4,7 +4,6 @@
 
 
 .content {
-  padding: 5%;
   overflow: hidden;
 
   &__filters {
@@ -38,7 +37,7 @@
   }
 
   app-footer {
-    width: 90%;
+    width: 100%;
     position: fixed;
     bottom: 0;
     margin: 5% auto;

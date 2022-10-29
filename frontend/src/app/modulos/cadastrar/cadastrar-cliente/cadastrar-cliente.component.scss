@@ -1,0 +1,31 @@
+.content {
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20% 5%;
+
+    input {
+      background: inherit;
+      height: 5vh;
+      width: 80vw;
+      margin: 2% auto;
+      border-radius: 10px;
+      padding: 2%;
+
+    }
+
+    input::placeholder {
+      color: var(--branco-opaco);
+      font-weight: 600;
+    }
+
+    app-button {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50% 0;
+
+    }
+  }
+}

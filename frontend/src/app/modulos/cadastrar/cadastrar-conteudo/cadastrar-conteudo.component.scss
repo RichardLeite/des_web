@@ -1,0 +1,98 @@
+h2 {
+  text-align: center;
+}
+.content {
+  padding: 5%;
+  display: grid;
+  align-items: center;
+
+  grid-template-areas:
+    "titulo avaliacao"
+    "diretor roterista"
+    "descricao descricao"
+    "descricao descricao"
+    "descricao descricao"
+    "descricao descricao"
+    "descricao descricao"
+    "descricao descricao"
+    "dataLancamento tempoDuracao"
+    "idiomaConteudo bilheteria"
+    "email email"
+    "button button"
+;
+
+  grid-gap: 5%;
+
+  input, textarea {
+    background: inherit;
+    color: var(--branco-opaco);
+    border: solid 1px var(--branco-opaco);
+    border-radius: 20px;
+    animation: all ease-in-out 0.5s;
+    padding: 2% 5%;
+    background: var(--cinza-claro);
+  }
+
+  input {
+    height: 5vh;
+  }
+
+  textarea {
+    height: 8vh;
+  }
+
+  input:focus, textarea:focus {
+    border: solid 1px var(--vermelho-opaco);
+    outline: none;
+  }
+
+  &__titulo {
+    grid-area: titulo;
+  }
+
+  &__descricao {
+    grid-area: descricao;
+  }
+
+  &__avalicao {
+    grid-area: avalicao;
+  }
+
+  &__diretor {
+    grid-area: diretor;
+  }
+
+  &__roterista {
+    grid-area: roterista;
+  }
+
+  &__data {
+    grid-area: dataLancamento;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bilheteria {
+    grid-area: bilheteria;
+  }
+
+  &__idioma {
+    grid-area: idiomaConteudo;
+  }
+
+  &__tempo {
+    grid-area: tempoDuracao;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  app-button {
+    grid-area: button;
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

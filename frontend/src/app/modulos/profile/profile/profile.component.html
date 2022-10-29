@@ -1,0 +1,19 @@
+<div class="content">
+  <img src="https://media-exp1.licdn.com/dms/image/D4D03AQFDv3Ba1gcuVg/profile-displayphoto-shrink_200_200/0/1666381401047?e=1672272000&v=beta&t=6ugfdM4va4AoaPOHiQCUs6rV_crcUspNYfK8eSnnexo" alt="imagem usuario" class="content__imagem">
+
+  <div class="content__informacoes">
+    <div class="content__informacoes--nome">
+      Nome: {{ profile.nome }}
+    </div>
+    <div class="content__informacoes--username">
+      Username: {{ profile.username }}
+    </div>
+  </div>
+
+  <app-button
+  [textoInterno]="'Sair'"
+  [isBackgroundRed]="true"
+  (click)="logoff()"
+  >
+  </app-button>
+</div>
