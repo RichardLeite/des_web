@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpResponse } from '@angular/common/http';
+import { environment } from '../../environments/environment';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Conteudo } from '../models/conteudo';
 
 @Injectable({
@@ -6,10 +10,11 @@ import { Conteudo } from '../models/conteudo';
 })
 export class HomeService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  buscarDestaques(tipoLancamentos: string): Conteudo[] {
-    return [];
+  buscarDestaques(tipoLancamentos: string): Observable<any> {
+    // @ts-ignore
+    return this.http.get<any>(`${environment.API_HOST}/api/home/filmes-destaques`);
   }
 
   buscarNovoLancamentos(tipoLancamentos: string) {

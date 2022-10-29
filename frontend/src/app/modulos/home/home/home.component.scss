@@ -4,6 +4,8 @@
 
 
 .content {
+  padding: 5%;
+  overflow: hidden;
 
   &__filters {
     display: flex;
@@ -16,5 +18,29 @@
       width: 100%;
       text-align: -webkit-center;
     }
+  }
+
+  &__carrossel {
+    display: flex;
+    max-height: 30vh;
+    overflow-x: visible;
+    justify-content: space-around;
+  }
+
+  &__release {
+    margin: 10vw 0;
+    padding: 0;
+    &--conteudo {
+      max-height: 15vh;
+      display: flex;
+      overflow-x: visible;
+    }
+  }
+
+  app-footer {
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    margin: 5% auto;
   }
 }

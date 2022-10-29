@@ -43,7 +43,7 @@ app.use(
 
 // API Dinamica
 const endPoint = require('./helpers/endpoint');
-const API_ROOT = ['front'];
+const API_ROOT = ['api'];
 
 (function recursiveRoutes(folderRoot) {
   folderRoot.forEach((element) => {

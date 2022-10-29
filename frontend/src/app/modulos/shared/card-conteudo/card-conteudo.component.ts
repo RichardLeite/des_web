@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Conteudo } from '../../../models/conteudo';
+import { Constantes } from '../../../utils/constantes';
 
 @Component({
   selector: 'app-card-conteudo',
@@ -9,6 +10,8 @@ import { Conteudo } from '../../../models/conteudo';
 export class CardConteudoComponent implements OnInit {
   @Input()
   conteudo: Conteudo = new Conteudo();
+
+  public readonly CONSTANTES = Constantes;
 
   constructor() { }
 

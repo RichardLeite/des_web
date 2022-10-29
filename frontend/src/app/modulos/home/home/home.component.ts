@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { EstadoFiltros } from '../../../models/estado-filtros';
+import { HomeService } from '../../../services/home.service';
+import { Conteudo } from '../../../models/conteudo';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +10,19 @@ import { EstadoFiltros } from '../../../models/estado-filtros';
 })
 export class HomeComponent implements OnInit {
 
+  listaConteudo: Conteudo[] = [];
   public estadoFiltro: EstadoFiltros = new EstadoFiltros();
-  constructor() { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit(): void {
+    this.buscarDados();
+  }
+
+  buscarDados(): void {
+    this.homeService.buscarDestaques('filmes').subscribe((data) => {
+      this.listaConteudo = data.lista;
+      console.log(data.lista);
+    });
   }
 
   movieFocus(): boolean {

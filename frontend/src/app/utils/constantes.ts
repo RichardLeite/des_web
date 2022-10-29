@@ -11,4 +11,6 @@ export class Constantes {
   public static readonly SEARCH_ICON = '../../assets/svg/search-icon.svg';
   public static readonly MIC_ICON = '../../assets/svg/mic-icon.svg';
 
+  public static readonly AVALIACAO_ICON = '../../assets/svg/star-icon.svg'
+
 }
