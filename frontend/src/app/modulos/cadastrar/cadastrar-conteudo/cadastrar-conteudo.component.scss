@@ -2,17 +2,15 @@ h2 {
   text-align: center;
 }
 .content {
-  padding: 5%;
+  padding: 0 0 10% 0;
   display: grid;
   align-items: center;
+  height: 65vh;
+  overflow-y: visible;
 
   grid-template-areas:
     "titulo avaliacao"
     "diretor roterista"
-    "descricao descricao"
-    "descricao descricao"
-    "descricao descricao"
-    "descricao descricao"
     "descricao descricao"
     "descricao descricao"
     "dataLancamento tempoDuracao"
@@ -21,7 +19,7 @@ h2 {
     "button button"
 ;
 
-  grid-gap: 5%;
+  grid-gap: 1%;
 
   input, textarea {
     background: inherit;
@@ -94,5 +92,60 @@ h2 {
     height: 90%;
     margin: 0 auto;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .content {
+    padding: 5%;
+    width: 80vw;
+    grid-template-areas:
+    "titulo avaliacao"
+    "diretor roterista"
+    "descricao descricao"
+    "dataLancamento tempoDuracao"
+    "idiomaConteudo bilheteria"
+    "email email"
+    "button button"
+  ;
+    grid-gap: 2%;
+    height: 60vh;
+
+    input, textarea {
+      background: inherit;
+      color: var(--branco-opaco);
+      border: solid 1px var(--branco-opaco);
+      border-radius: 20px;
+      animation: all ease-in-out 0.5s;
+      padding: 2% 5%;
+      background: var(--cinza-claro);
+
+    }
+
+    input {
+      height: 2vh;
+    }
+
+    textarea {
+      height: 4vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .content {
+    width: 80vw;
+    height: 45vh;
+    grid-gap: 5%;
+  }
+}
+
+
+@media screen and (min-width: 1440px){
+  .content {
+    width: 60vw;
+    height: 25vh;
+    grid-gap: 5%;
+    margin: 0 auto;
   }
 }

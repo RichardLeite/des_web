@@ -2,7 +2,7 @@
   text-align: center;
   width: inherit;
   height: inherit;
-  margin: 70% 0;
+  margin: 20% 0;
   position: relative;
 
   &__input {
@@ -60,16 +60,24 @@
     background: var(--cinza-claro);
     border-radius: 5px;
     width: 65%;
-    margin: 25% auto;
-    padding: 10%;
+    margin: 5% auto;
     //animation: spin 1s linear infinite;
+    padding: 10%;
   }
 }
 
 @media screen and (min-width: 1024px){
   .content {
     width: 40%;
-    margin: 10% auto;
+    margin: 5% auto;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .content {
+    width: 40%;
+    margin: 0 auto;
     padding: 5%;
   }
 }
