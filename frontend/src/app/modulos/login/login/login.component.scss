@@ -1,0 +1,75 @@
+.content {
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  margin: 70% 0;
+  position: relative;
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__email, &__senha {
+      padding: 5%;
+      margin: 5% 0;
+      background: var(--cinza-claro);
+      border-radius: 5px;
+      width: 80%;
+      color: var(--branco);
+    }
+
+    &__email::placeholder, &__senha::placeholder {
+      color: var(--branco);
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: start;
+      padding-left: 5%;
+    }
+
+    &__email:focus, &__senha:focus {
+      border: white solid 1px;
+    }
+  }
+
+  &__iteracoes {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    &__link {
+      text-align: right;
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: 500;
+      align-self: flex-end;
+    }
+
+    &__entrar {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .content {
+    background: var(--cinza-claro);
+    border-radius: 5px;
+    width: 65%;
+    margin: 25% auto;
+    padding: 10%;
+    //animation: spin 1s linear infinite;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .content {
+    width: 40%;
+    margin: 10% auto;
+    padding: 5%;
+  }
+}

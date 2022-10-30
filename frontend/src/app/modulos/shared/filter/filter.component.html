@@ -1,0 +1,23 @@
+<div
+  *ngIf="isFocoMovie()"
+  class="content"
+  [ngClass]="isHomeActivated ? 'active' : ''"
+>
+  <label>{{ textoInterno }}</label>
+</div>
+
+<div
+  *ngIf="isFocoTVShow()"
+  class="content"
+  [ngClass]="isTVShowActivated ? 'active' : ''"
+>
+  <label>{{ textoInterno }}</label>
+</div>
+
+<div
+  *ngIf="isFocoSeries()"
+  class="content"
+  [ngClass]="isSeriesActivated ? 'active' : ''"
+>
+  <label>{{ textoInterno }}</label>
+</div>

@@ -1,0 +1,48 @@
+<div class="content">
+  <app-search></app-search>
+
+  <div class="content__filters">
+    <app-filter
+      (click)="movieFocus()"
+      [textoInterno]="'Movie'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+
+    </app-filter>
+    <app-filter
+      (click)="tvShowFocus()"
+      [textoInterno]="'TV Show'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+    </app-filter>
+    <app-filter
+      (click)="serieFocus()"
+      [textoInterno]="'Series'"
+      [isHomeActivated]="estadoFiltro.isMovieActivated"
+      [isTVShowActivated]="estadoFiltro.isTVShowActivated"
+      [isSeriesActivated]="estadoFiltro.isSeriesActivated"
+    >
+    </app-filter>
+  </div>
+
+  <div class="content__carrossel">
+    <app-card-conteudo
+      *ngFor="let conteudo of listaConteudo"
+      [conteudo]="conteudo"
+    ></app-card-conteudo>
+  </div>
+
+  <div class="content__release">
+    <h4 class="content__release--title">new Release</h4>
+    <nav class="content__release--conteudo">
+      <app-card-conteudo
+        *ngFor="let conteudo of listaConteudo"
+        [conteudo]="conteudo"
+      ></app-card-conteudo>
+    </nav>
+  </div>
+</div>

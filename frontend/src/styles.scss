@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  --vermelho-opaco: rgba(255, 0, 0, 0.75);
+  --branco: #fff;
+  --branco-opaco: rgba(255, 255, 255, 0.75);
+  --cinza-claro: #1D1E22;
+  --cinza-escuro: #18191C;
+
+}
+
+body {
+  background: var(--cinza-escuro);
+  color: var(--branco);
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+.button {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2% 0;
+  font-weight: bold;
+
+  &__red {
+    background: var(--vermelho-opaco);
+    color: var(--branco);
+  }
+
+  &__branco {
+    background: var(--branco);
+    color: var(--cinza-escuro);
+  }
+}
+
+.title {
+  &__branco {
+    color: var(--branco);
+  }
+
+  &__vermelho {
+    color: var(--vermelho-opaco);
+  }
+}

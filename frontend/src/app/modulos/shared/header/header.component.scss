@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  width: 90%;
+  max-width: 95vw;
+  max-height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 5%;
+
+  &__hamburguer-menu {
+
+  }
+
+  &__logo {
+    color: var(--vermelho-opaco);
+  }
+}
