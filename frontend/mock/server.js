@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // CORS Config
 const portApi = 8443;
-const corsAllowDomains = ['http://localhost:9000', 'http://localhost:4200'];
+const corsAllowDomains = ['http://localhost:9000', 'http://localhost:4200', 'https://desweb-eight.vercel.app/'];
 app.use(
   cors({
     origin: corsAllowDomains,
