@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API_HOST: 'http://localhost:8443'
+  API_HOST: 'https://mock-vjcb.onrender.com'
 };

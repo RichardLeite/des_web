@@ -6,6 +6,10 @@
 |Leonardo Paublo de Oliveira   |   |202102074096   |
 |Richard de Souza Leite   |   |202051599481   |
 
+### Figma:
+- https://www.figma.com/file/SQAOoA60TiZ65SAKhhc8rT/Projeto-da-Faculdade?node-id=0%3A1
+
+
 ### Instalação das dependencias necessarias: <br>
 `npm install ou npm i` <br>
 Após a instalação dos pacotes necessarios, pelo terminal acesse a pasta `mock`
