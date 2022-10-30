@@ -1,0 +1,30 @@
+.content {
+  background: no-repeat center;
+  width: 35vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 2vh;
+
+  &__title {
+    align-self: center;
+    padding: 1%;
+    margin: 0;
+  }
+
+  &__avaliacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+
+    &__estrelas {
+      display: inherit;
+
+      img {
+        margin: 0 5%;
+      }
+    }
+  }
+}
