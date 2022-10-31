@@ -35,4 +35,5 @@ export class LoginComponent implements OnInit {
   cadastrar(): void {
     this.router.navigate(['cadastrar/cliente']);
   }
+
 }
