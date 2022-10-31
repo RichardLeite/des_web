@@ -11,6 +11,6 @@ export class AppComponent {
 
   constructor(private router: Router) {}
   exibirFixos() {
-    return this.router.url == '/login';
+    return this.router.url != '/login';
   }
 }
