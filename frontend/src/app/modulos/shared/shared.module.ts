@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { CardConteudoComponent } from './card-conteudo/card-conteudo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -16,7 +17,8 @@ import { CardConteudoComponent } from './card-conteudo/card-conteudo.component';
         HeaderComponent,
         SearchComponent,
         FilterComponent,
-        CardConteudoComponent
+        CardConteudoComponent,
+        NotFoundComponent
     ],
     exports: [
         ButtonComponent,

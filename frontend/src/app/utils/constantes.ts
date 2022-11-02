@@ -13,4 +13,6 @@ export class Constantes {
 
   public static readonly AVALIACAO_ICON = '../../assets/svg/star-icon.svg'
 
+  public static readonly NOT_FOUND_ANIMATION = '../../assets/animation/page-not-found.gif';
+
 }

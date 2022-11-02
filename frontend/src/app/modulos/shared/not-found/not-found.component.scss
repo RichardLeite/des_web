@@ -1,0 +1,32 @@
+.content {
+  width: 70vw;
+  max-width: 80vw;
+  height: 60vh;
+  max-height: 80vh;
+  text-align: center;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  &__descricao {
+    font-size: 1.5rem;
+    width: inherit;
+
+    app-button {
+      width: 50%;
+      margin: 10% auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .content {
+
+    &__title {
+      font-size: 5rem;
+    }
+  }
+}

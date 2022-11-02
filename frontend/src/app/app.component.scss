@@ -8,3 +8,10 @@ app-footer {
   bottom: 0;
   width: 100%;
 }
+
+@media screen and (min-width: 1024px){
+  app-footer {
+    visibility: hidden;
+    display: none;
+  }
+}
