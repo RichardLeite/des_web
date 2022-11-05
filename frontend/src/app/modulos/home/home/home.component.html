@@ -40,8 +40,9 @@
     <h4 class="content__release--title">new Release</h4>
     <nav class="content__release--conteudo">
       <app-card-conteudo
-        *ngFor="let conteudo of listaConteudo"
+        *ngFor="let conteudo of listaRelease"
         [conteudo]="conteudo"
+        [isShowInfor]="false"
       ></app-card-conteudo>
     </nav>
   </div>

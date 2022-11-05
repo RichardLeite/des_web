@@ -1,6 +1,4 @@
 const responseModel = require('../../helpers/responseModel');
-const dummyJson = require('dummy-json');
-const dummyJsonHelpers = require('../../helpers/dummy-json-helpers');
 
 module.exports = (app, endpoint) => {
     app.get(endpoint + '/', (req, res) => {

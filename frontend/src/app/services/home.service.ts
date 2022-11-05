@@ -13,24 +13,23 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   buscarDestaques(tipoLancamentos: string): Observable<any> {
-    // @ts-ignore
     return this.http.get<any>(`${environment.API_HOST}/api/home/filmes-destaques`);
   }
 
-  buscarNovoLancamentos(tipoLancamentos: string) {
-
+  buscarNovoLancamentos(tipoLancamentos: string): Observable<any> {
+    return this.http.get<any>(`${environment.API_HOST}/api/home/filme/lancamento`);
   }
 
-  buscarFilmes() {
-
+  buscarFilmes(): Observable<any> {
+    return this.http.get<any>(`${environment.API_HOST}/api/home/filmes`);
   }
 
-  buscarSeries() {
-
+  buscarSeries(): Observable<any> {
+    return this.http.get<any>(`${environment.API_HOST}/api/home/series`);
   }
 
-  buscarTVShow() {
-
+  buscarTVShow(): Observable<any> {
+    return this.http.get<any>(`${environment.API_HOST}/api/home/tv-show`);
   }
 
   adicionarConteudo(conteudo: Conteudo): void {

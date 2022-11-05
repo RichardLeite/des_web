@@ -7,6 +7,7 @@ import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { CardConteudoComponent } from './card-conteudo/card-conteudo.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
         SearchComponent,
         FilterComponent,
         CardConteudoComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        LoaderComponent
     ],
     exports: [
         ButtonComponent,

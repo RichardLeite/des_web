@@ -1,8 +1,8 @@
 const responseModel = require('../../helpers/responseModel.js');
 
 module.exports = (app, endpoint) => {
-    app.get(endpoint + '/', (req, res) => {
-        const response = `{
+  app.get(endpoint + '/', (req, res) => {
+    const response = `{
    "lista":[
       {
          "titulo":"O Poderoso Chefão",
@@ -72,9 +72,9 @@ module.exports = (app, endpoint) => {
       }
    ]
 }`;
-        setTimeout(() => {
-            // responseModel.error(res, 404, 'Erro ao tentar comunicar com SRV');
-            responseModel.sucess(res, response);
-        }, responseModel.delay());
-    });
+    setTimeout(() => {
+      // responseModel.error(res, 404, 'Erro ao tentar comunicar com SRV');
+      responseModel.sucess(res, response);
+    }, responseModel.delay());
+  });
 }

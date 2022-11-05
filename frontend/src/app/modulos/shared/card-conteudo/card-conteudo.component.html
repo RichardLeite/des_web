@@ -1,9 +1,9 @@
 <div class="content" style='background-image: url("{{conteudo.imagem}}")'>
-  <h3 class="content__title">
+  <h3 class="content__title" *ngIf="isShowInfor">
     {{ conteudo.titulo }}
   </h3>
 
-  <div class="content__avaliacao">
+  <div class="content__avaliacao" *ngIf="isShowInfor">
     <div class="content__avaliacao__estrelas">
       <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
       <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">

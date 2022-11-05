@@ -11,6 +11,9 @@ export class CardConteudoComponent implements OnInit {
   @Input()
   conteudo: Conteudo = new Conteudo();
 
+  @Input()
+  isShowInfor: boolean = true;
+
   public readonly CONSTANTES = Constantes;
 
   constructor() { }
