@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { EstadoFiltros } from '../../../models/estado-filtros';
 import { HomeService } from '../../../services/home.service';
 import { Conteudo } from '../../../models/conteudo';
+import { finalize } from 'rxjs';
+import { SpinnerService } from '../../../services/spinner.service';
 
 @Component({
   selector: 'app-home',
@@ -13,12 +15,16 @@ export class HomeComponent implements OnInit {
   listaConteudo: Conteudo[] = [];
   listaRelease: Conteudo[] = [];
   public estadoFiltro: EstadoFiltros = new EstadoFiltros();
-  constructor(private homeService: HomeService) { }
+  constructor(private homeService: HomeService, private spinnaerService: SpinnerService) { }
 
   ngOnInit(): void {
+    this.spinnaerService.exibirLoader();
     this.movieFocus();
-
-    this.homeService.buscarNovoLancamentos('movies').subscribe((data) => {
+    this.homeService.buscarNovoLancamentos('movies').pipe(
+      finalize(() => {
+        this.spinnaerService.fecharLoader();
+      })
+    ).subscribe((data) => {
       this.listaRelease = data.lista;
       console.log(this.listaRelease);
     });
@@ -32,7 +38,12 @@ export class HomeComponent implements OnInit {
   }
 
   movieFocus(): boolean {
-    this.homeService.buscarFilmes().subscribe((data) => {
+    this.spinnaerService.exibirLoader();
+    this.homeService.buscarFilmes().pipe(
+      finalize(() =>
+        this.spinnaerService.fecharLoader()
+      )
+    ).subscribe((data) => {
       this.listaConteudo = data.lista;
       this.estadoFiltro.alterarParaMovie();
     });
@@ -42,7 +53,10 @@ export class HomeComponent implements OnInit {
   }
 
   tvShowFocus(): boolean {
-    this.homeService.buscarTVShow().subscribe((data) => {
+    this.spinnaerService.exibirLoader();
+    this.homeService.buscarTVShow().pipe(
+      finalize(() => this.spinnaerService.fecharLoader())
+    ).subscribe((data) => {
       this.listaConteudo = data.lista;
       this.estadoFiltro.alterarParaTVShow();
     });
@@ -50,7 +64,10 @@ export class HomeComponent implements OnInit {
   }
 
   serieFocus(): boolean {
-    this.homeService.buscarSeries().subscribe((data) => {
+    this.spinnaerService.exibirLoader();
+    this.homeService.buscarSeries().pipe(
+      finalize(() => this.spinnaerService.fecharLoader())
+    ).subscribe((data) => {
       this.listaConteudo = data.lista;
       this.estadoFiltro.alterarParaSeries();
     });

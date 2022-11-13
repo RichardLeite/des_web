@@ -29,12 +29,14 @@
     </app-filter>
   </div>
 
-  <div class="content__carrossel">
-    <app-card-conteudo
-      *ngFor="let conteudo of listaConteudo"
-      [conteudo]="conteudo"
-    ></app-card-conteudo>
-  </div>
+  <nav class="content__carrossel">
+    <nav class="content__carrossel--conteudo">
+      <app-card-conteudo
+        *ngFor="let conteudo of listaConteudo"
+        [conteudo]="conteudo"
+      ></app-card-conteudo>
+    </nav>
+  </nav>
 
   <div class="content__release">
     <h4 class="content__release--title">new Release</h4>

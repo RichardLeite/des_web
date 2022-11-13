@@ -33,7 +33,7 @@ module.exports = (app, endpoint) => {
             "Suspense"
          ],
          "imagem":"https://br.web.img3.acsta.net/c_310_420/pictures/22/06/23/21/10/1998178.jpg",
-         "descricao":"Em O Telefone Preto, em 1978, uma série de sequestros estão acontecendo na cidade de Denver. Ethan Hawke interpreta o "Grabbler", um serial killer que tem seu alvo crianças do bairro. Finney Shaw, um garoto de 13 anos, é sequestrado. o garoto acorda em um porão, onde há apenas uma cama e um telefone preto em uma das paredes. Quando o aparelho toca, o garoto consegue ouvir a voz das vítimas anteriores do assassino, e elas tentam evitar que o Finney sofra o mesmo destino. Enquanto isso, sua irmã Gwen tem sonhos que indicam o lugar onde ele pode estar e corre contra o tempo para tentar ajudar os detetives Wright e Miller a ajudar o irmão, apenas para que isso seja em vão. Finney continua a fazer tentativas para escapar que apenas falham, até que uma das vítimas do serial killler fala sobre um plano que finalmente poderia levar Finney à liberdade.",
+         "descricao":"Em O Telefone Preto, em 1978, uma série de sequestros estão acontecendo na cidade de Denver. Ethan Hawke interpreta o 'Grabbler', um serial killer que tem seu alvo crianças do bairro. Finney Shaw, um garoto de 13 anos, é sequestrado. o garoto acorda em um porão, onde há apenas uma cama e um telefone preto em uma das paredes. Quando o aparelho toca, o garoto consegue ouvir a voz das vítimas anteriores do assassino, e elas tentam evitar que o Finney sofra o mesmo destino. Enquanto isso, sua irmã Gwen tem sonhos que indicam o lugar onde ele pode estar e corre contra o tempo para tentar ajudar os detetives Wright e Miller a ajudar o irmão, apenas para que isso seja em vão. Finney continua a fazer tentativas para escapar que apenas falham, até que uma das vítimas do serial killler fala sobre um plano que finalmente poderia levar Finney à liberdade.",
          "faixaetaria":"16",
          "avaliacao":0.0
       },
@@ -90,7 +90,7 @@ module.exports = (app, endpoint) => {
             "Comedia"
          ],
          "imagem":"https://br.web.img3.acsta.net/c_310_420/pictures/22/10/25/18/11/5327705.jpg",
-         "descricao":"Uta - a cantora mais amada do mundo. Sua voz, com a qual ela canta enquanto esconde sua verdadeira identidade, foi descrita como "de outro mundo". Ela aparecerá em público pela primeira vez em um show ao vivo. Enquanto o local se enche de todos os tipos de fãs de Uta - piratas animados, a Marinha assistindo de perto e os Chapéus de Palha liderados por Luffy que simplesmente vieram para curtir sua performance sonora - a voz que o mundo inteiro estava esperando está prestes a ressoar. A história começa com o fato chocante de que ela é 'filha de Shanks'.",
+         "descricao":"Uta - a cantora mais amada do mundo. Sua voz, com a qual ela canta enquanto esconde sua verdadeira identidade, foi descrita como 'de outro mundo'. Ela aparecerá em público pela primeira vez em um show ao vivo. Enquanto o local se enche de todos os tipos de fãs de Uta - piratas animados, a Marinha assistindo de perto e os Chapéus de Palha liderados por Luffy que simplesmente vieram para curtir sua performance sonora - a voz que o mundo inteiro estava esperando está prestes a ressoar. A história começa com o fato chocante de que ela é 'filha de Shanks'.",
          "faixaetaria":"12",
          "avaliacao":0.0
       },

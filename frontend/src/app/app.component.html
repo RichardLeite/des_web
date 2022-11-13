@@ -1,7 +1,8 @@
-<app-header 
+<app-header
     *ngIf="exibirFixos()"
 ></app-header>
 <router-outlet></router-outlet>
+<app-loader></app-loader>
 <app-footer
 *ngIf="exibirFixos()"
 ></app-footer>

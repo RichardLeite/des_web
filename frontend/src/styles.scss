@@ -10,8 +10,8 @@
 body {
   background: var(--cinza-escuro);
   color: var(--branco);
-  overflow: hidden;
   font-family: 'Oswald', sans-serif;
+  overflow-y: hidden;
 }
 
 .button {
@@ -46,6 +46,6 @@ body {
 
 @media screen and (max-width: 768px){
   * {
-    overflow: hidden;
+    overflow-y: hidden;
   }
 }

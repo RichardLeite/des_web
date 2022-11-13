@@ -28,7 +28,8 @@ import { LoaderComponent } from './loader/loader.component';
         HeaderComponent,
         SearchComponent,
         FilterComponent,
-        CardConteudoComponent
+        CardConteudoComponent,
+        LoaderComponent
     ],
     imports: [
         CommonModule
