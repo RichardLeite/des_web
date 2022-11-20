@@ -1,20 +1,26 @@
-.content {
-  width: 90%;
-  max-width: 100vw;
+@import '../../../../base';
+
+.content-menubar {
+  width: 50%;
+  height: 1.5rem;
+  margin: auto;
   display: flex;
   justify-content: space-around;
-  background: var(--cinza-escuro);
-  padding: 5%;
+  background: $cinza-escuro;
+  padding: 0.5rem;
+  border: 1px solid $branco-opaco;
+  border-radius: 15px;
+  margin-bottom: 1%;
 
   &__perfil {
-    width: 30px;
-    height: 30px;
-    max-height: 30px;
-    max-width: 30px;
-    border-radius: 50px;
+    width: 1.5rem;
+    height: 1.5rem;
+    // max-height: 30px;
+    // max-width: 30px;
+    border-radius: 50%;
   }
 
   &__perfil:active {
-    border: 1px solid var(--vermelho-opaco);
+    border: 1px solid $vermelho-opaco;
   }
 }

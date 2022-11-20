@@ -1,88 +1,101 @@
-<h2>Cadastro de Conteudo</h2>
-<form
-  action=""
-  method="post"
-  class="content"
-  [formGroup]="forms"
-  (ngSubmit)="cadastrarConteudo()"
->
-  <input
-    class="content__titulo"
-    type="text"
-    placeholder="Insira o titulo do conteudo"
-    formControlName="titulo"
-  >
-  <input
-    class="content__avaliacao"
-    type="number"
-    name=""
-    placeholder="Avaliação do conteudo"
-    formControlName="avaliacao"
-  >
-  <input
-    class="content__diretor"
-    type="text"
-    name=""
-    placeholder="Diretor do conteudo"
-    formControlName="diretor"
-  >
-  <input
-    class="content__roterista"
-    type="text"
-    name=""
-    placeholder="Roteirista do conteudo"
-    formControlName="roterista"
-  >
-  <textarea
-    class="content__descricao"
-    placeholder="Insira uma descrição do conteudo"
-    formControlName="descricao"
-  >
-  </textarea>
-  <div class="content__data">
-    Data de Lancamento
-    <input
-      type="date"
-      name=""
-      placeholder="Data de Lancamento"
-      formControlName="dataLancamento"
+<div class="content">
+  <div class="content__boxcadastro">
+    <div class="content__cadastro">
+    <h2>Cadastro de Conteudo</h2>
+    <form
+      action=""
+      method="post"
+      class="content"
+      [formGroup]="forms"
+      (ngSubmit)="cadastrarConteudo()"
     >
-  </div>
-  <input
-    class="content__tempo"
-    type="number"
-    name=""
-    placeholder="Tempo de duração (Em minutos)"
-    formControlName="tempoDuracao"
-  >
-  <input
-    class="content__idioma"
-    type="text"
-    name=""
-    placeholder="Idioma do conteudo"
-    formControlName="idiomaConteudo"
-  >
-  <input
-    class="content__bilheteria"
-    type="number"
-    name=""
-    placeholder="Bilheteria arrecadada"
-    formControlName="bilheteriaArrecadada"
-  >
-  <input
-    class="content__email"
-    type="email"
-    name=""
-    placeholder="Insira seu email"
-    email="email"
-  >
+    <label>Título</label>
+      <input
+        class="content__titulo"
+        type="text"
+        placeholder="Insira o titulo do conteudo"
+        formControlName="titulo"
+      >
+      <label>Avaliação</label>
+      <input
+        class="content__avaliacao"
+        type="number"
+        name=""
+        placeholder="Avaliação do conteudo"
+        formControlName="avaliacao"
+      >
+      <label>Diretor</label>
+      <input
+        class="content__diretor"
+        type="text"
+        name=""
+        placeholder="Diretor do conteudo"
+        formControlName="diretor"
+      >
+      <label>Roteirista</label>
+      <input
+        class="content__roterista"
+        type="text"
+        name=""
+        placeholder="Roteirista do conteudo"
+        formControlName="roterista"
+      >
+      <label>Descrição</label>
+      <textarea
+        class="content__descricao"
+        placeholder="Insira uma descrição do conteudo"
+        formControlName="descricao"
+      >
+      </textarea>
+      <label>Data de Lançamento</label>
+      <input
+          type="date"
+          name=""
+          placeholder="Data de Lancamento"
+          formControlName="dataLancamento"
+        >
+      <label>Tempo de duração</label>
+      <input
+        class="content__tempo"
+        type="number"
+        name=""
+        placeholder="Tempo de duração (Em minutos)"
+        formControlName="tempoDuracao"
+      >
+      <label>Idioma do conteudo</label>
+      <input
+        class="content__idioma"
+        type="text"
+        name=""
+        placeholder="Idioma do conteudo"
+        formControlName="idiomaConteudo"
+      >
+      <label>Bilheteria arrecadada</label>
+      <input
+        class="content__bilheteria"
+        type="number"
+        name=""
+        placeholder="Bilheteria arrecadada"
+        formControlName="bilheteriaArrecadada"
+      >
+      <label>Email</label>
+      <input
+        class="content__email"
+        type="email"
+        name=""
+        placeholder="Insira seu email"
+        email="email"
+      >
 
-  <app-button
-    class="content__iteracoes__entrar"
-    [isBackgroundRed]="true"
-    [textoInterno]="'Cadastrar'"
-    (click)="cadastrarConteudo()"
-    aria-label="Cadastrar"
-  >
-  </app-button>
-</form>
+      <app-button
+        class="content__iteracoes__entrar"
+        [isBackgroundRed]="true"
+        [textoInterno]="'Cadastrar'"
+        (click)="cadastrarConteudo()"
+        aria-label="Cadastrar"
+      >
+      </app-button>
+    </form>
+    </div>
+  </div>
+</div>

@@ -1,31 +1,80 @@
-.content {
+@import '/src/base';
 
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__boxcadastro{
+    display: flexbox;
+    margin: 0 auto;
+    margin-top: 15vh;
+  }
+
+  &__cadastro{
+    width: 500px;
+    height: 500px;
+    background: $cinza-claro;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   form {
     display: flex;
     flex-direction: column;
-    padding: 20% 5%;
+    align-items: center;
+    justify-content: center;
 
     input {
+      color: $branco;
       background: inherit;
-      height: 5vh;
-      width: 80vw;
-      margin: 2% auto;
+      margin: 1rem auto;
       border-radius: 10px;
-      padding: 2%;
-
+      padding: 10px 10px;
     }
 
     input::placeholder {
-      color: var(--branco-opaco);
+      color: $branco-opaco;
       font-weight: 600;
     }
 
-    app-button {
-      width: 80%;
-      margin: 0 auto;
-      padding: 50% 0;
+    .title {
+      &__branco {
+        color: $branco;
+      }
 
+      &__vermelho {
+        color: $vermelho-opaco;
+      }
+    }
+
+    app-button {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  .content {
+    margin: 0 auto;
+
+    &__boxcadastro{
+      position: flex;
+    }
+
+    &__cadastro{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background: none;
     }
   }
 }

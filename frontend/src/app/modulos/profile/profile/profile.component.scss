@@ -1,43 +1,21 @@
+@import '/src/base';
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
-  max-height: 80vh;
-  overflow: hidden;
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
   justify-content: center;
+
+  &__profile{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+  }
 
   &__imagem {
     border-radius: 50%;
-    width: 25vw;
-    max-width: 25vw;
-
-  }
-
-  app-button {
-    margin: 50% auto;
-    width: 80%;
-  }
-}
-
-
-@media screen and (min-width: 768px){
-  .content {
-    font-size: 2rem;
-
-    &__imagem {
-      margin-bottom: 2%;
-      border-radius: 50%;
-      width: 15vw;
-      height: auto;
-    }
-
-    app-button {
-      margin: 5%;
-      width: 30%;
-
-    }
+    border: solid 2px $branco-opaco;
+    margin: 1rem;
   }
 }

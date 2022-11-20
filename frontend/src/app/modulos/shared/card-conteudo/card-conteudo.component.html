@@ -1,14 +1,18 @@
-<div class="content" style='background-image: url("{{conteudo.imagem}}")'>
-  <h3 class="content__title">
-    {{ conteudo.titulo }}
-  </h3>
+<div class="content">
+<div class="content__capa" style='background-image: url("{{conteudo.imagem}}")'>
+  <div class="content__info">
+    <h3 class="content__title">
+      {{ conteudo.titulo }}
+    </h3>
 
-  <div class="content__avaliacao">
-    <div class="content__avaliacao__estrelas">
-      <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
-      <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
-      <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
+    <div class="content__avaliacao">
+      <div class="content__avaliacao__estrelas">
+        <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
+        <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
+        <img src="{{ CONSTANTES.AVALIACAO_ICON }}" alt="">
+      </div>
+      <label>{{ conteudo.avaliacao }}</label>
     </div>
-    <label>{{ conteudo.avaliacao }}</label>
   </div>
+</div>
 </div>

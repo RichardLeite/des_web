@@ -1,51 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import '/src/base';
+@import '/src/app/modulos/shared/footer/footer.component.scss';
+@import '/src/app/modulos/shared/button/button.component.scss';
+
 * {
-  --vermelho-opaco: rgba(255, 0, 0, 0.75);
-  --branco: #fff;
-  --branco-opaco: rgba(255, 255, 255, 0.75);
-  --cinza-claro: #1D1E22;
-  --cinza-escuro: #18191C;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 body {
-  background: var(--cinza-escuro);
-  color: var(--branco);
-  overflow: hidden;
+  background: $cinza-escuro;
+  color: $branco;
   font-family: 'Oswald', sans-serif;
-}
-
-.button {
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 2% 0;
-  font-weight: bold;
-
-  &__red {
-    background: var(--vermelho-opaco);
-    color: var(--branco);
-  }
-
-  &__branco {
-    background: var(--branco);
-    color: var(--cinza-escuro);
-  }
-}
-
-.title {
-  &__branco {
-    color: var(--branco);
-  }
-
-  &__vermelho {
-    color: var(--vermelho-opaco);
-  }
-}
-
-@media screen and (max-width: 768px){
-  * {
-    overflow: hidden;
-  }
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 }

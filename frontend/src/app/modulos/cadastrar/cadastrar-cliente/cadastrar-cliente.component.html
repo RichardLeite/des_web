@@ -1,31 +1,38 @@
 <div class="content">
-  <form
-    action=""
-    method="post"
-    [formGroup]="forms"
-  >
-    <input
-      type="text"
-      class="content__nome"
-      placeholder="Insira seu nome: "
-      formControlName="nome"
-    >
-    <input
-      type="text"
-      class="content__username"
-      placeholder="Insira seu username"
-      formControlName="username"
-    >
-    <input
-      type="password" class="content__senha"
-      placeholder="Coloque sua senha"
-      formControlName="senha"
-    >
-    <app-button
-      [isBackgroundRed]="true"
-      [textoInterno]="'Cadastrar'"
-      (click)="cadastrar()"
-    >
-    </app-button>
-  </form>
+  <div class="content__boxcadastro">
+    <div class="content__cadastro">
+      <form
+        action=""
+        method="post"
+        [formGroup]="forms"
+      >
+        <label>Nome</label>
+        <input
+          type="text"
+          class="content__nome"
+          placeholder="Insira seu nome: "
+          formControlName="nome"
+        >
+        <label>Username</label>
+        <input
+          type="text"
+          class="content__username"
+          placeholder="Insira seu username"
+          formControlName="username"
+        >
+        <label>Senha</label>
+        <input
+          type="password" class="content__senha"
+          placeholder="Coloque sua senha"
+          formControlName="senha"
+        >
+        <app-button
+          [isBackgroundRed]="true"
+          [textoInterno]="'Cadastrar'"
+          (click)="cadastrar()"
+        >
+        </app-button>
+      </form>
+    </div>
+  </div>
 </div>
