@@ -1,26 +1,26 @@
-<nav class="content">
+<nav class="content-menubar">
   <img
     src="{{ !isHomeActivated ? CONSTANTES.HOME_ICON : CONSTANTES.HOME_SELECTED_ICON }}"
     alt="home"
-    class="content__home"
+    class="content-menubar__home"
     (click)="irHome()"
   >
   <img
     src="{{ !isPlayActivated ? CONSTANTES.PLAY_ICON : CONSTANTES.PLAY_SELECTED_ICON }}"
     alt="play"
-    class="content__play"
+    class="content-menubar__play"
     (click)="irPlay()"
   >
   <img
     src="{{ !isFavActivated ? CONSTANTES.FAVORITE_ICON : CONSTANTES.FAVORITE_SELECTED_ICON }}"
     alt="favorito"
-    class="content__favorito"
+    class="content-menubar__favorito"
     (click)="irFavoritos()"
   >
   <img
     src="{{ CONSTANTES.PROFILE_ICON }}"
     alt="perfil"
-    class="content__perfil"
+    class="content-menubar__perfil"
     (click)="irProfile()"
   >
 </nav>

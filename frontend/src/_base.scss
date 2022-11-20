@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Varibles
+$vermelho-opaco: #ff0000bf;
+$branco: #fff;
+$branco-opaco: #ffffffbf;
+$cinza-claro: #1D1E22;
+$cinza-escuro: #18191C;
+
+input, textarea {
+  background: inherit;
+  color: $branco-opaco;
+  border: solid 1px $branco-opaco;
+  border-radius: 20px;
+  animation: all ease-in-out 0.5s;
+  padding: 2% 5%;
+  background: $cinza-claro;
+}
+
+input {
+  height: 1rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+input:focus, textarea:focus {
+  border: solid 1px $vermelho-opaco;
+  outline: none;
+}
+
+app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

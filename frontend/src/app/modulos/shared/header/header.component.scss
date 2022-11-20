@@ -1,19 +1,20 @@
+@import '/src/base';
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
   display: flex;
-  width: 90%;
-  max-width: 95vw;
-  max-height: 20vh;
-  justify-content: space-between;
+  margin: 1rem;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  margin: 0 5%;
-
-  &__hamburguer-menu {
-
-  }
 
   &__logo {
-    color: var(--vermelho-opaco);
+    color: $vermelho-opaco;
   }
 }
